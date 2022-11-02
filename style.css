@@ -1,0 +1,100 @@
+/* універсальний */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* класа */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;  
+}
+/* тега */
+nav{
+    flex: 1;
+    text-align: right;
+}
+/* дочірній */
+/*nav ul{
+    list-style-type: none;
+}*/
+/* групування */
+nav ul, nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: rgb(0, 0, 0);
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/* атрібута */
+.navbar input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+.navbar .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+#col-2 img {
+    max-width: 100%;
+    float: right;
+    object-position: 750px -300 px;
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #2a4a43;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #606d6b;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #aed1ca;
+} 
